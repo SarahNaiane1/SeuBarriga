@@ -6,13 +6,18 @@ const locators = {
     },
     MENU: {
         CONTAS: '[href="/contas"]',
-        SETTINGS: '[data-test=menu-settings]'
+        SETTINGS: '[data-test=menu-settings]',
+        RESET: '[href="/reset"]',
+        EXIT: '[href="/logout"]'
     },
     CONTAS: {
         NOME: '[data-test="nome"]',
         BTN_SALVAR: '.btn',
-        BTN_UPDATE:  ':nth-child(1) > :nth-child(2) > :nth-child(1) > .far',
+        BTN_UPDATE:':nth-child(5) > :nth-child(2) > :nth-child(1) > .far',
+        XP_BTN_UPDATE: "//table//td[contains(., 'Conta de Teste')]/..//i[@class='far fa-edit']",
+        XP_BTN_DELETE: "//table//td[contains(., 'Conta de Teste')]/..//i[@class='far fa-trash-alt']",
         BTN_SAVE: '.btn'
+        
 
     },
     MESSAGE: '.toast-message'    

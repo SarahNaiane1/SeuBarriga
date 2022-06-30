@@ -1,0 +1,25 @@
+{
+  "name": "seubarriga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "dependencies": {
+    "cypress": "^9.7.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.0"
+  },
+  "scripts": {
+    "test": "npx run open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahNaiane1/SeuBarriga.git"
+  },
+  "author": "Sarah Naiane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SarahNaiane1/SeuBarriga/issues"
+  },
+  "homepage": "https://github.com/SarahNaiane1/SeuBarriga#readme"
+}
