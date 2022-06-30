@@ -8,7 +8,8 @@ const locators = {
         CONTAS: '[href="/contas"]',
         SETTINGS: '[data-test=menu-settings]',
         RESET: '[href="/reset"]',
-        EXIT: '[href="/logout"]'
+        EXIT: '[href="/logout"]',
+        MOVIMENTACAO: '[data-test="menu-movimentacao"] > .fas'
     },
     CONTAS: {
         NOME: '[data-test="nome"]',
@@ -19,6 +20,21 @@ const locators = {
         BTN_SAVE: '.btn'
         
 
+    },
+    MOVIMENTACAO: {
+        DESCRICAO: '[data-test=descricao]',
+        VALOR: '[data-test=valor]',
+        INTERESSADO: '[data-test=envolvido]',
+        CONTA: '[data-test=conta]',
+        STATUS: '[data-test=status]',
+        BTN_SALVAR: '.btn-primary'
+    },
+    EXTRATO: {
+        LINHAS: '.list-group > li',
+        FN_XP_BUSCA_ELEMENTO: (desc, value) => `//span[contains(., '${desc}')]/following-sibling::small[contains(., '${value}')]`,
+        FN_XP_REMOVER_ELEMENTO: conta => `//span[contains(., '${conta}')]/../../..//i[@class='far fa-trash-alt']`,
+        FN_XP_ALTERAR_ELEMENTO: conta => `//span[contains(., '${conta}')]/../../..//i[@class='fas fa-edit']`,
+        FN_XP_LINHA: desc => `//span[contains(., '${desc}')]/../../../..`
     },
     MESSAGE: '.toast-message'    
 }
